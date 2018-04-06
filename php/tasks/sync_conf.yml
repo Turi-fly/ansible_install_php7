@@ -1,0 +1,16 @@
+---
+
+- name: Sync php-fpm config
+  copy: src={{ PHPFPMCONF }} dest=/home/yx/server/php7/etc/{{ PHPFPMCONF }} backup=yes owner=root group=root mode=0644
+  ignore_errors: True
+  tags: php-fpmconf
+
+- name: Sync php script
+  copy: src={{ PHPSH }} dest=/home/yx/server/php7/etc/{{ PHPSH }} backup=yes owner=root group=root mode=0644
+  ignore_errors: True
+  tags: phpscript
+
+- name: Sync php config
+  copy: src={{ PHPCONF }} dest=/home/yx/server/php7/lib/{{ PHPCONF }} backup=yes owner=root group=root mode=0644
+  ignore_errors: True
+  tags: phpconf

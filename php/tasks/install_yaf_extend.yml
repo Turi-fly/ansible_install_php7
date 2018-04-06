@@ -1,0 +1,24 @@
+---
+#Install yaf extension for php
+#2018-04-06 12:07 by liubaobao at WDTY company
+
+
+- name: Load yaf extend
+  command: /home/yx/server/php7/bin/phpize
+  args:
+    chdir: /tmp/{{ YAF }}/
+
+- name: Configure the build
+  command: ./configure --with-php-config=/home/yx/server/php7/bin/php-config
+  args:
+    chdir: /tmp/{{ YAF }}/
+
+- name: Build yaf extend
+  command: make -j
+  args:
+    chdir: /tmp/{{ YAF }}/
+
+- name: Install yaf extend
+  command: make install
+  args:
+    chdir: /tmp/{{ YAF }}/
