@@ -2,8 +2,6 @@
 [![Ansible 2.4.3](https://img.shields.io/ansible/role/d/3078.svg)](https://www.ansible.com/)
 
 
-使用说明 ========
-
 ### 一、摘要
 
 	本roles适用于Ubuntu + Debian
