@@ -17,7 +17,7 @@
 
 	Note: 如果做了公钥认证的话，可以使用下面的执行方式
 
-	ansible-playbook -i hlist php55_install.yml -vv -f30 -s
+	ansible-playbook -i hlist php7_install.yml -vv -f30 -s
 
 
 ### 三、注意事项
