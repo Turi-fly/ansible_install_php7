@@ -1,0 +1,9 @@
+---
+#start php for script
+# 2018-04-04 23:28 by liubaobao at WDTY company
+
+- name: change script 655
+  command: chmod +x /home/yx/server/php7/etc/{{ PHPSH }}
+
+- name: Restart php
+  command: /home/yx/server/php7/etc/{{ PHPSH }} restart

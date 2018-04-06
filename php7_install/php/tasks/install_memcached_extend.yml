@@ -1,0 +1,24 @@
+---
+#Install memcached extension for php
+##2018-04-06 12:07 by liubaobao at WDTY company
+
+
+- name: Load memcached extend
+  command: /home/yx/server/php7/bin/phpize
+  args:
+    chdir: /tmp/{{ MEMCACHED }}/
+
+- name: Configure the build
+  command: ./configure {{ PHPMEMCONFIGURE }} {{ PHPCOMCONFiGURE }}
+  args:
+    chdir: /tmp/{{ MEMCACHED }}/
+
+- name: Build memcached extend
+  command: make -j
+  args:
+    chdir: /tmp/{{ MEMCACHED }}/
+
+- name: Install memcached extend
+  command: make install
+  args:
+    chdir: /tmp/{{ MEMCACHED }}/

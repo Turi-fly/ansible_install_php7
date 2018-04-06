@@ -1,0 +1,44 @@
+---
+# Decompression related source packages
+# 2018-04-04 19:40 by liubaobao at WDTY company
+
+- name: Decompression related php source packages
+  unarchive: src=/tmp/{{ PHP7 }}.tgz dest=/tmp/ copy=no
+  ignore_errors: True
+  tags: unarchive
+
+#Decompression php memcached extend
+- name: Decompression related php memcached source packages
+  unarchive: src=/tmp/{{ MEMCACHED }}.tgz dest=/tmp/ copy=no
+  ignore_errors: True
+  tags: unarchive
+
+#Decompression php redis extend
+- name: Decompression related php redis source packages
+  unarchive: src=/tmp/{{ REDIS }}.tgz dest=/tmp/ copy=no
+  ignore_errors: True
+  tags: unarchive
+
+#Decompression php ssh2 extend
+- name: Decompression related php redis source packages
+  unarchive: src=/tmp/{{ SSH2 }}.tgz dest=/tmp/ copy=no
+  ignore_errors: True
+  tags: unarchive
+
+#Decompression php swoole extend
+- name: Decompression related php swoole source packages
+  unarchive: src=/tmp/{{ SWOOLE }}.tgz dest=/tmp/ copy=no
+  ignore_errors: True
+  tags: unarchive
+
+#Decompression php yaf extend
+- name: Decompression related php yaf source packages
+  unarchive: src=/tmp/{{ YAF }}.tgz dest=/tmp/ copy=no
+  ignore_errors: True
+  tags: unarchive
+
+#Decompression php yar extend
+- name: Decompression related php yaf source packages
+  unarchive: src=/tmp/{{ YAR }}.tgz dest=/tmp/ copy=no
+  ignore_errors: True
+  tags: unarchive
