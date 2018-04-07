@@ -1,5 +1,0 @@
----
-- hosts: hlist
-  gather_facts: False
-  roles:
-   - php

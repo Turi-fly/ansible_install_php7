@@ -1,2 +1,0 @@
-[hlist]
-192.168.0.105 ansible_sudo_pass='123456'
